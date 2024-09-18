@@ -1,0 +1,25 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.box{
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    width: 50%;
+    
+
+}
+
+.inner-box{
+    background-color: teal;
+
+}
+
+.parent.second{
+    color: blue;
+}
+.parent{
+    display: none;
+}
