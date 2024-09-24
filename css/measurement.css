@@ -1,4 +1,4 @@
-*{
+/* *{
 margin: 0;
 padding: 0;
 }
@@ -22,4 +22,60 @@ padding: 0;
 }
 .parent{
     display: none;
+} */
+
+
+body{
+    background-image: url(145.jpg);
+    font-family: sans-serif;
+   display: flex;
+}
+
+.menu{
+    width: 40%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    
+}
+
+h1,h2,p{
+    text-align: center;
+}
+
+.estd{
+    font-style: italic;
+}
+
+.item p{
+    display: inline-block;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.flavor, .dessert{
+    padding-top: 20px;
+    width: 40%;
+    text-align: left;
+}
+
+img{
+   width: 50px;
+   
+}
+
+.price{
+    width: 50%;
+    text-align: right;
+}
+
+hr{
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+
+a{
+    color: black;
 }
