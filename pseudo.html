@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        .child{
+            padding: 1rem;
+            border: 1px solid black;
+        }
+
+        /* .child.first{
+            color: red;
+        } */
+
+        /* .parent :first-child{
+            color: red;
+        } */
+
+        .parent :first-child{
+            background-color: blue;
+        }
+
+        .child:first-child{
+            background-color: red;
+        }
+
+        .child:last-child{
+            background-color: brown;
+        }
+
+        .parent :nth-child(2n){
+            background-color: blueviolet;
+        }
+
+        .parent :nth-child(3){
+            background-color: rgb(28, 140, 140);
+        }
+
+        h1:hover{
+            color: blue;
+        }
+
+        button:focus{
+            background-color: blueviolet;
+        }
+
+        /* p:not(.first){
+            color: blue;
+        } */
+
+        /* .content .first{
+            color: blue;
+        } */
+
+        /* .content :first-child{
+            color: red;
+        } */
+
+
+        .content :not(.first){
+            color: red;
+        }
+
+        .red{
+            color: red;
+            margin-left: .1rem;
+        }
+
+        .required-field::after{
+            content: "*";
+            color: red;
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <h1>pseudo classes</h1>
+    <ul>
+        <li>
+            first-child
+        </li>
+    </ul>
+
+    <div class="parent">
+        <div class="child first">one
+            <span>-1</span>
+            <span>-2</span>
+        </div>
+        <div class="child">two</div>
+        <div class="child">three</div>
+        <div class="child">four</div>
+        <div class="child">fifth</div>
+    </div>
+
+    <div class="content">
+    <p class="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> 
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+</div>
+    <hr>
+    <button>
+        register
+    </button>
+
+
+    <hr>
+    <form>
+
+        <div>
+            <label for="" class="required-field">first name</label>
+        <input placeholder="" />
+
+       </div>
+
+       <div>
+        <label for="" class="" >middle name</label>
+    <input placeholder="" />
+
+   </div>
+
+   <div>
+    <label for="" class="required-field">last name</label>
+<input placeholder="" />
+
+</div>
+
+        <div>
+            <label for="">username<span class="red">*</span></label>
+        <input placeholder="username" />
+
+       </div>
+        <div>
+            <label for="">username<span class="red">*</span></label>
+        <input placeholder="username" />
+
+       </div>
+        <div>
+            <label for="">password<span class="red">*</span></label>
+            <input placeholder="password"/>
+    </div>
+    </form>
+
+    <button>
+        login
+    </button>
+
+
+
+</body>
+</html>
